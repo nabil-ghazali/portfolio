@@ -2,21 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio – Développeur Web & IA</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
-    header { background: #2c3e50; color: white; padding: 2rem 1rem; text-align: center; }
-    nav a { margin: 0 1rem; color: white; text-decoration: none; }
-    section { padding: 3rem 1rem; max-width: 800px; margin: auto; }
-    h2 { color: #2c3e50; }
-    .project { background: white; margin: 1rem 0; padding: 1rem; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 2rem 1rem; background: #2c3e50; color: white; }
-    .skills span { display: inline-block; background: #ddd; margin: 0.3rem; padding: 0.4rem 0.8rem; border-radius: 4px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jean Dupont – Développeur Web & IA</title>
+  <meta name="description" content="Portfolio de Jean Dupont, développeur web et intelligence artificielle. Découvrez mes projets et compétences.">
+  <meta name="author" content="Jean Dupont">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
   <header>
     <h1>Jean Dupont</h1>
     <p>Développeur Web & Intelligence Artificielle</p>
@@ -28,49 +21,45 @@
     </nav>
   </header>
 
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Développeur passionné par le web et l'IA, je conçois des solutions modernes alliant interfaces efficaces et intelligence artificielle.</p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Développeur passionné par la création de sites modernes et les technologies d'IA appliquées.</p>
+    </section>
 
-  <section id="skills">
-    <h2>Compétences</h2>
-    <div class="skills">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      <span>Python</span><span>TensorFlow</span><span>Flask</span>
-      <span>React</span><span>Git</span>
-    </div>
-  </section>
+    <section id="skills">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>Python</span><span>TensorFlow</span><span>React</span>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projets</h2>
+    <section id="projects">
+      <h2>Projets</h2>
 
-    <div class="project">
-      <h3>Site vitrine pour un artisan</h3>
-      <p>Développement d'un site responsive en HTML/CSS/JS. Déploiement sur GitHub Pages.</p>
-      <p><strong>Tech :</strong> HTML, CSS, JS</p>
-      <a href="#">Lien GitHub</a>
-    </div>
+      <div class="project">
+        <h3><a href="projets/projet-site-vitrine.html">Site Vitrine Artisan</a></h3>
+        <p>Site responsive pour un artisan, développé avec HTML/CSS.</p>
+      </div>
 
-    <div class="project">
-      <h3>Détection d'émotions avec IA</h3>
-      <p>Application IA avec TensorFlow pour analyser des émotions à partir de texte.</p>
-      <p><strong>Tech :</strong> Python, TensorFlow, Flask</p>
-      <a href="#">Lien GitHub</a>
-    </div>
+      <div class="project">
+        <h3><a href="projets/projet-emotion.html">IA : Détection d'Émotions</a></h3>
+        <p>Analyse des émotions dans le texte avec TensorFlow & Flask.</p>
+      </div>
 
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:jean.dupont@email.com">jean.dupont@email.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/jean-dupont" target="_blank">LinkedIn</a></p>
-    <p>📂 <a href="https://github.com/jean-dupont" target="_blank">GitHub</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:ng-project@outlook.fr">Me contacter par email</a></p>
+      <p>💼 <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a></p>
+      <p>📂 <a href="https://github.com/" target="_blank">GitHub</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Jean Dupont – Portfolio</p>
+    <p>&copy; 2025 Nabil GHAZALI</p>
   </footer>
-
 </body>
 </html>

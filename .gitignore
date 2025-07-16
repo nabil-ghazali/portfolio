@@ -1,0 +1,11 @@
+node_modules/
+.env
+portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── projets/
+│   ├── projet-emotion.html
+│   └── projet-site-vitrine.html
+└── images/
+    └── (tes images de projet)
