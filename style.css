@@ -3,36 +3,22 @@ body {
     padding: 0;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: url('images/AI\ Interface\ Design_remix.png') no-repeat center center fixed;
-    background-size: 95rem 74rem;
-    color: #fff;
+    background: url('images/Centered\ AI\ Illustration_remix_01.png') no-repeat center center fixed;
+    /* background-size: 95rem 74rem;  'images/AI\ Interface\ Design_remix.png' */
+    background-size: cover;  
     position: relative;
   }
   
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent pour voir l’image derrière */
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  }
-  
-
   section {
     max-width: 800px;
     margin: auto;
     padding: 3rem 1rem;
   }
+
   h2 {
-    color: #2c3e50;
+    color: #114d88;
+    /* backdrop-filter: blur(2px); */
+
   }
   .skills span {
     display: inline-block;
@@ -65,13 +51,28 @@ body {
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent pour voir l’image derrière */
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
 
-  main {
+main {
     margin-top: 80px; /* pour header */
     padding: 2rem;
     padding-bottom: 80px; /* pour footer fixe */
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(5px); */
     border-radius: 12px;
     width: 90%;
     max-width: 1000px;
@@ -80,11 +81,17 @@ body {
   }
   
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fff;
     margin: 0;
   }
-  
+
+  header p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0;
+  }
+
   nav {
     display: flex;
     gap: 1.5rem;
@@ -94,22 +101,38 @@ body {
   }
   
   nav a {
-    text-decoration: none;
-    /* color: #fff; */
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #00ccff;
-  }
-  
-  nav a {
-    color: white;
+    display: inline-block;
+    color: #ffffff;
     margin: 0 1rem;
     text-decoration: none;
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    animation: fadeInNav 0.6s ease forwards;
+    opacity: 0;
   }
- 
+  
+  /* Effet néon au survol */
+  nav a:hover {
+    color: #00ccff;
+    text-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff;
+    transform: scale(1.05);
+  }
+  
+  /* Animation d’apparition */
+  @keyframes fadeInNav {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
   footer {
     position: fixed;
     bottom: 0;
@@ -125,3 +148,149 @@ body {
     font-size: 0.9rem;
     z-index: 1000;
   }
+
+  #about p {
+    color: #fff; /* texte blanc */
+    font-family: 'Orbitron', sans-serif; /* typographie futuriste */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    backdrop-filter: blur(2px); 
+
+  }
+  
+  .skills span {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Effet hover interactif */
+  .skills span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2;
+  }
+  
+  /* Animation d'entrée subtile */
+  .skills span {
+    animation: floatIn 0.6s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Animation keyframes */
+  @keyframes floatIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+/* Logo */
+.logo h1, .logo p {
+  margin: 0;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Navigation par défaut */
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Orbitron', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #00ccff;
+  text-shadow: 0 0 5px #00ccff;
+}
+
+/* Hamburger global */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Icônes internes */
+.hamburger .icon {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+/* Cache la croix par défaut */
+.hamburger .close {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Quand menu activé : cache ☰, affiche ✖ */
+#menu-toggle:checked + .hamburger .open {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger .close {
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  #menu-toggle:checked + .hamburger + .navbar {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+#contact a {
+  text-decoration: none;              /* Supprimer le soulignement */
+  color: #ffffff;                     /* Couleur au survol */
+  font-family: 'Orbitron', sans-serif; /* Exemple de police futuriste */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #00ffff;                     /* Couleur néon ou futuriste au survol */
+
+}
